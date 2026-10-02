@@ -7,9 +7,9 @@ function OwnerDashboard() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const token = localStorage.getItem("ownerToken");
+    const token = sessionStorage.getItem("ownerToken");
 
-    fetch("http://localhost:5000/api/appointments", {
+    fetch("https://aura-beauty-studio.onrender.com/api/appointments", {
       headers: {
         Authorization: `Bearer ${token}`
       }

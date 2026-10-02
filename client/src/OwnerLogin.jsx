@@ -19,7 +19,7 @@ function OwnerLogin() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/owner/login",
+        "https://aura-beauty-studio.onrender.com/api/owner/login",
         {
           method: "POST",
           headers: {

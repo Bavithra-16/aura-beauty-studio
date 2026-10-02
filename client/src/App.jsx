@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/api/services")
+    fetch("https://aura-beauty-studio.onrender.com/api/services")
 
       .then((response) => response.json())
 
@@ -117,8 +117,7 @@ function App() {
 
     if (Object.keys(newErrors).length === 0) {
 
-      fetch("http://localhost:5000/api/appointments", {
-
+      fetch("https://aura-beauty-studio.onrender.com/api/appointments", {
         method: "POST",
 
         headers: {
